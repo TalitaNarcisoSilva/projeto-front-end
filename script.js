@@ -13,10 +13,11 @@ formLogin.addEventListener('submit', function (evento) {
     const senhaValida = senha.value.length >= 6;
 
     if (emailValido == true && senhaValida == true) {
-        console.log("entrou!!!!");
+       mensagemErro.classList.add('d-none');
+       window.location.href = 'curso.html';
         
     } else {
-        console.log("deu errado");
+       mensagemErro.classList.remove('d-none');
     }
 })
 
