@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores</title>
+
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        #brand {
+
+            color: #000000;
+
+        }
+
+        .nav-link {
+
+            color: #000000 !important;
+        }
+
+        .nav-link:hover {
+
+            color: #24cb11 !important;
+        }
+    </style>
+
+</head>
+
+
+<boddy>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-success text-white border-botton navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" id="brand" href="./admin.html"> <i class="bi bi-mortarboard"></i>
+                    Sistema Academico
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item"><a class="nav-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link">Professores</a></li>
+                        <li class="nav-item"><a class="nav-link">Sair</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container py-4">
+        <div class="card shadow">
+            <div class="card-header bg-secondary text-white">
+                <h1 class="h4 mb-0">
+                    <i class="bi bi-journal-bookmark-fill"> Cadastro de Professor</i>
+
+                </h1>
+            </div>
+
+            <div class="card-body">
+                <form id="formProfessor">
+                    <div class="mb-3">
+                        <label for="nomeProfesor" class="form-label"> Nome do Professor </label>
+                        <input type="text" class="form-control" id="nomeProfessor">
+                        <div class="invalid-feedback"> Nome Invalido</div>
+                        <div class="valid-feedback"> Nome Valido</div>
+                       
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="registro" class="form-label"> Registro </label>
+                        <input type="text" class="form-control" id="registro">
+                        <div class="invalid-feedback"> Registro Invalido</div>
+                        <div class="valid-feedback"> Registro Valido</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="funcao" class="form-label"> Função/Aula </label>
+                        <input type="number" class="form-control" id="funcao">
+                        <div class="invalid-feedback"> Invalido</div>
+                        <div class="valid-feedback"> Valido</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-save"> Salvar</i>
+
+                    </button>
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script-professor.js"></script>
+</boddy>
+
+</html>
